@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap');
+body {
+    background-image: url("https://i.ibb.co/cbHkZjQ/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Montserrat";
+}
+.main {
+    max-width: 960px;
+    margin: 0px auto;
+    padding: 0px 15px;
+    min-height: 100vh;
+}
+.header {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0px;
+}
+.notes__title {
+    color: #fff;
+    font-size: 38px;
+    font-family: "Montserrat";
+    font-weight: 400;
+}
+// change header title font size when screen size is less than 600px
+@media only screen and (max-width: 600px) {
+    .notes__title {
+        font-size: 28px;
+    }
+}
+.notes {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
+}
